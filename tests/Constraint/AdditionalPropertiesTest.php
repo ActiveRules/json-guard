@@ -1,8 +1,8 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
 
 class AdditionalPropertiesTest extends TestCase

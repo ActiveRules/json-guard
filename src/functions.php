@@ -1,14 +1,14 @@
 <?php
 
-namespace League\JsonGuard;
+namespace Activerules\JsonGuard;
 
 /**
  * A helper function to quickly build an error from a validator instance.
  *
  * @param string                      $message
- * @param \League\JsonGuard\Validator $validator
+ * @param \Activerules\JsonGuard\Validator $validator
  *
- * @return \League\JsonGuard\ValidationError
+ * @return \Activerules\JsonGuard\ValidationError
  */
 function error($message, Validator $validator)
 {

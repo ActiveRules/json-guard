@@ -1,12 +1,12 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard\Assert;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
-use function League\JsonGuard\pointer_push;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
+use function Activerules\JsonGuard\pointer_push;
 
 final class AdditionalItems implements ConstraintInterface
 {
@@ -71,9 +71,9 @@ final class AdditionalItems implements ConstraintInterface
     /**
      * @param array                       $value
      * @param array                       $items
-     * @param \League\JsonGuard\Validator $validator
+     * @param \Activerules\JsonGuard\Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError
+     * @return \Activerules\JsonGuard\ValidationError
      */
     private static function validateAdditionalItemsWhenNotAllowed($value, $items, Validator $validator)
     {

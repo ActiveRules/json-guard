@@ -1,8 +1,8 @@
 <?php
 
-namespace League\JsonGuard\Test\Exception;
+namespace Activerules\JsonGuard\Test\Exception;
 
-use League\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
 use PHPUnit\Framework\TestCase;
 
 class InvalidSchemaExceptionTest extends TestCase

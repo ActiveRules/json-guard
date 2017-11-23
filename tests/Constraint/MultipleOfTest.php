@@ -1,9 +1,9 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Constraint\DraftFour\MultipleOf;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\MultipleOf;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
 
 class MultipleOfTest extends TestCase

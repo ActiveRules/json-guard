@@ -17,11 +17,11 @@ Once the validator is created you can call `$validator->passes()` or `$validator
 ```php
 <?php
 
-$dereferencer  = League\JsonReference\Dereferencer::draft4();
+$dereferencer  = Activerules\JsonReference\Dereferencer::draft4();
 $schema        = $dereferencer->dereference('http://json-schema.org/draft-04/schema#');
 $data          = json_decode('{ "id": "json-guard.dev/schema#" }');
 
-$validator     = new League\JsonGuard\Validator($data, $schema);
+$validator     = new Activerules\JsonGuard\Validator($data, $schema);
 
 if ($validator->fails()) {
     $errors = $validator->errors();

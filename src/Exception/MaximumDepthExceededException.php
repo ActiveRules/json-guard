@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard\Exception;
+namespace Activerules\JsonGuard\Exception;
 
 final class MaximumDepthExceededException extends \RuntimeException
 {

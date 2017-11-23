@@ -24,7 +24,7 @@ composer require league/json-guard
 
 ## Usage
 
-Complete documentation is available [here](http://json-guard.thephpleague.com/).
+Complete documentation is available [here](http://json-guard.activerules.com/).
 
 ## Change log
 
@@ -54,22 +54,24 @@ If you discover any security related issues, please email matthew.james.allan@gm
 
 ## Credits
 
-- [Matt Allan][link-author]
+- [Brian Winkers][fork-link-author]
+- [Matt Allan][original-link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-travis]: https://travis-ci.org/thephpleague/json-guard
-[link-scrutinizer]: https://scrutinizer-ci.com/g/thephpleague/json-guard/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/thephpleague/json-guard
+[link-travis]: https://travis-ci.org/activerules/json-guard
+[link-scrutinizer]: https://scrutinizer-ci.com/g/activerules/json-guard/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/activerules/json-guard
 [link-docs]: http://json-guard.thephpleague.com/
-[link-author]: https://github.com/thephpleague
+[fork-link-author]: https://github.com/activerules
+[original-link-author]: https://github.com/activerules
 [link-contributors]: ../../contributors
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/thephpleague/json-guard/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/thephpleague/json-guard.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/thephpleague/json-guard.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/activerules/json-guard/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/activerules/json-guard.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/activerules/json-guard.svg?style=flat-square
 [ico-docs]: https://img.shields.io/badge/Docs-Latest-brightgreen.svg?style=flat-square

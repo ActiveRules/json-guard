@@ -1,8 +1,8 @@
 <?php
 
-namespace League\JsonGuard\RuleSet;
+namespace Activerules\JsonGuard\RuleSet;
 
-use League\JsonGuard\Exception\ConstraintNotFoundException;
+use Activerules\JsonGuard\Exception\ConstraintNotFoundException;
 use Psr\Container\ContainerInterface;
 
 /**

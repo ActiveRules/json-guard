@@ -1,14 +1,14 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Constraint\DraftFour\Format;
-use League\JsonGuard\ValidationError;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\Format;
+use Activerules\JsonGuard\ValidationError;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
-use League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
-use function League\JsonGuard\error;
-use League\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
+use function Activerules\JsonGuard\error;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
 
 class FormatTest extends TestCase
 {

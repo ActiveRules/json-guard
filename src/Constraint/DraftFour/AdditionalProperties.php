@@ -1,13 +1,13 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard;
-use League\JsonGuard\Assert;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
-use function League\JsonGuard\pointer_push;
+use Activerules\JsonGuard;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
+use function Activerules\JsonGuard\pointer_push;
 
 final class AdditionalProperties implements ConstraintInterface
 {

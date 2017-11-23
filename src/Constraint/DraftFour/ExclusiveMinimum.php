@@ -1,11 +1,11 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard\Assert;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
 
 final class ExclusiveMinimum implements ConstraintInterface
 {
@@ -29,7 +29,7 @@ final class ExclusiveMinimum implements ConstraintInterface
      * @param mixed     $parameter
      * @param Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null
+     * @return \Activerules\JsonGuard\ValidationError|null
      */
     public function validate($value, $parameter, Validator $validator)
     {

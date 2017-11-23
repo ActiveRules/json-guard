@@ -1,12 +1,12 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard;
-use League\JsonGuard\Assert;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
+use Activerules\JsonGuard;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
 
 final class MinLength implements ConstraintInterface
 {

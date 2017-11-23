@@ -1,10 +1,10 @@
 <?php
 
-namespace League\JsonGuard;
+namespace Activerules\JsonGuard;
 
-use League\JsonGuard\Exception\MaximumDepthExceededException;
-use League\JsonGuard\RuleSet\DraftFour;
-use League\JsonReference\Reference;
+use Activerules\JsonGuard\Exception\MaximumDepthExceededException;
+use Activerules\JsonGuard\RuleSet\DraftFour;
+use Activerules\JsonReference\Reference;
 use Psr\Container\ContainerInterface;
 
 final class Validator
@@ -94,8 +94,8 @@ final class Validator
     /**
      * @return boolean
      *
-     * @throws \League\JsonGuard\Exception\InvalidSchemaException
-     * @throws \League\JsonGuard\Exception\MaximumDepthExceededException
+     * @throws \Activerules\JsonGuard\Exception\InvalidSchemaException
+     * @throws \Activerules\JsonGuard\Exception\MaximumDepthExceededException
      */
     public function fails()
     {
@@ -105,8 +105,8 @@ final class Validator
     /**
      * @return boolean
      *
-     * @throws \League\JsonGuard\Exception\InvalidSchemaException
-     * @throws \League\JsonGuard\Exception\MaximumDepthExceededException
+     * @throws \Activerules\JsonGuard\Exception\InvalidSchemaException
+     * @throws \Activerules\JsonGuard\Exception\MaximumDepthExceededException
      */
     public function passes()
     {
@@ -118,8 +118,8 @@ final class Validator
      *
      * @return ValidationError[]
      *
-     * @throws \League\JsonGuard\Exception\InvalidSchemaException
-     * @throws \League\JsonGuard\Exception\MaximumDepthExceededException
+     * @throws \Activerules\JsonGuard\Exception\InvalidSchemaException
+     * @throws \Activerules\JsonGuard\Exception\MaximumDepthExceededException
      */
     public function errors()
     {
@@ -248,7 +248,7 @@ final class Validator
      * structure from causing the validator to continue
      * validating for an incredibly long time.
      *
-     * @throws \League\JsonGuard\Exception\MaximumDepthExceededException
+     * @throws \Activerules\JsonGuard\Exception\MaximumDepthExceededException
      */
     private function checkDepth()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace League\JsonGuard\Bench;
+namespace Activerules\JsonGuard\Bench;
 
-use League\JsonReference\Dereferencer;
-use League\JsonGuard\Validator;
+use Activerules\JsonReference\Dereferencer;
+use Activerules\JsonGuard\Validator;
 
 /**
  * @Groups({"validation"})

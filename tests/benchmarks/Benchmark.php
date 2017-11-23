@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard\Bench;
+namespace Activerules\JsonGuard\Bench;
 
 /**
  * @BeforeMethods({"setUp"})

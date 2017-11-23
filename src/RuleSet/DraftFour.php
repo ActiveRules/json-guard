@@ -1,34 +1,34 @@
 <?php
 
-namespace League\JsonGuard\RuleSet;
+namespace Activerules\JsonGuard\RuleSet;
 
-use League\JsonGuard\Constraint\DraftFour\AdditionalItems;
-use League\JsonGuard\Constraint\DraftFour\AdditionalProperties;
-use League\JsonGuard\Constraint\DraftFour\AllOf;
-use League\JsonGuard\Constraint\DraftFour\AnyOf;
-use League\JsonGuard\Constraint\DraftFour\Dependencies;
-use League\JsonGuard\Constraint\DraftFour\Enum;
-use League\JsonGuard\Constraint\DraftFour\ExclusiveMaximum;
-use League\JsonGuard\Constraint\DraftFour\ExclusiveMinimum;
-use League\JsonGuard\Constraint\DraftFour\Format;
-use League\JsonGuard\Constraint\DraftFour\Items;
-use League\JsonGuard\Constraint\DraftFour\Maximum;
-use League\JsonGuard\Constraint\DraftFour\MaxItems;
-use League\JsonGuard\Constraint\DraftFour\MaxLength;
-use League\JsonGuard\Constraint\DraftFour\MaxProperties;
-use League\JsonGuard\Constraint\DraftFour\Minimum;
-use League\JsonGuard\Constraint\DraftFour\MinItems;
-use League\JsonGuard\Constraint\DraftFour\MinLength;
-use League\JsonGuard\Constraint\DraftFour\MinProperties;
-use League\JsonGuard\Constraint\DraftFour\MultipleOf;
-use League\JsonGuard\Constraint\DraftFour\Not;
-use League\JsonGuard\Constraint\DraftFour\OneOf;
-use League\JsonGuard\Constraint\DraftFour\Pattern;
-use League\JsonGuard\Constraint\DraftFour\PatternProperties;
-use League\JsonGuard\Constraint\DraftFour\Properties;
-use League\JsonGuard\Constraint\DraftFour\Required;
-use League\JsonGuard\Constraint\DraftFour\Type;
-use League\JsonGuard\Constraint\DraftFour\UniqueItems;
+use Activerules\JsonGuard\Constraint\DraftFour\AdditionalItems;
+use Activerules\JsonGuard\Constraint\DraftFour\AdditionalProperties;
+use Activerules\JsonGuard\Constraint\DraftFour\AllOf;
+use Activerules\JsonGuard\Constraint\DraftFour\AnyOf;
+use Activerules\JsonGuard\Constraint\DraftFour\Dependencies;
+use Activerules\JsonGuard\Constraint\DraftFour\Enum;
+use Activerules\JsonGuard\Constraint\DraftFour\ExclusiveMaximum;
+use Activerules\JsonGuard\Constraint\DraftFour\ExclusiveMinimum;
+use Activerules\JsonGuard\Constraint\DraftFour\Format;
+use Activerules\JsonGuard\Constraint\DraftFour\Items;
+use Activerules\JsonGuard\Constraint\DraftFour\Maximum;
+use Activerules\JsonGuard\Constraint\DraftFour\MaxItems;
+use Activerules\JsonGuard\Constraint\DraftFour\MaxLength;
+use Activerules\JsonGuard\Constraint\DraftFour\MaxProperties;
+use Activerules\JsonGuard\Constraint\DraftFour\Minimum;
+use Activerules\JsonGuard\Constraint\DraftFour\MinItems;
+use Activerules\JsonGuard\Constraint\DraftFour\MinLength;
+use Activerules\JsonGuard\Constraint\DraftFour\MinProperties;
+use Activerules\JsonGuard\Constraint\DraftFour\MultipleOf;
+use Activerules\JsonGuard\Constraint\DraftFour\Not;
+use Activerules\JsonGuard\Constraint\DraftFour\OneOf;
+use Activerules\JsonGuard\Constraint\DraftFour\Pattern;
+use Activerules\JsonGuard\Constraint\DraftFour\PatternProperties;
+use Activerules\JsonGuard\Constraint\DraftFour\Properties;
+use Activerules\JsonGuard\Constraint\DraftFour\Required;
+use Activerules\JsonGuard\Constraint\DraftFour\Type;
+use Activerules\JsonGuard\Constraint\DraftFour\UniqueItems;
 
 /**
  * The default rule set for JSON Schema Draft 4.

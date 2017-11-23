@@ -1,10 +1,10 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Constraint\DraftFour\AllOf;
-use League\JsonGuard\Exception\InvalidSchemaException;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\AllOf;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
 
 class AllOfTest extends TestCase

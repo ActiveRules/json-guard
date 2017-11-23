@@ -1,5 +1,5 @@
 {
-    "name": "league/json-guard",
+    "name": "activerules/json-guard",
     "type": "library",
     "description": "A validator for JSON using json-schema.",
     "keywords": [
@@ -9,14 +9,20 @@
         "json-schema",
         "json-schema.org"
     ],
-    "homepage": "https://github.com/thephpleague/json-guard",
+    "homepage": "https://github.com/activerules/json-guard",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Brian Winkers",
+            "email": "bwinkers@gmail.com",
+            "homepage": "https://github.com/bwinkers",
+            "role": "Fork Developer"
+        },
         {
             "name": "Matthew Allan",
             "email": "matthew.james.allan@gmail.com",
             "homepage": "https://mattallan.org",
-            "role": "Developer"
+            "role": "Original Developer"
         }
     ],
     "repositories": [
@@ -43,12 +49,12 @@
         "scrutinizer/ocular": "~1.1",
         "squizlabs/php_codesniffer": "~2.3",
         "json-schema/JSON-Schema-Test-Suite": "1.2.0",
-        "league/json-reference": "1.0.0",
+        "activerules/json-reference": "1.0.0",
         "ext-curl": "*"
     },
     "autoload": {
         "psr-4": {
-            "League\\JsonGuard\\": "src"
+            "Activerules\\JsonGuard\\": "src"
         },
         "files": [
             "src/functions.php"
@@ -56,8 +62,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\JsonGuard\\Test\\": "tests",
-            "League\\JsonGuard\\Bench\\": "tests/benchmarks"
+            "Activerules\\JsonGuard\\Test\\": "tests",
+            "Activerules\\JsonGuard\\Bench\\": "tests/benchmarks"
         }
     },
     "scripts": {

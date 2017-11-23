@@ -1,9 +1,9 @@
 <?php
 
-namespace League\JsonGuard\Test\RuleSet;
+namespace Activerules\JsonGuard\Test\RuleSet;
 
-use League\JsonGuard\Exception\ConstraintNotFoundException;
-use League\JsonGuard\RuleSet\DraftFour;
+use Activerules\JsonGuard\Exception\ConstraintNotFoundException;
+use Activerules\JsonGuard\RuleSet\DraftFour;
 use PHPUnit\Framework\TestCase;
 
 class DraftFourRuleSetTest extends TestCase

@@ -1,16 +1,16 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour\Format;
+namespace Activerules\JsonGuard\Constraint\DraftFour\Format;
 
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Validator;
 
 interface FormatExtensionInterface
 {
     /**
      * @param string                      $value The value to validate
-     * @param \League\JsonGuard\Validator $validator
+     * @param \Activerules\JsonGuard\Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null A ValidationError if validation fails, otherwise null.
+     * @return \Activerules\JsonGuard\ValidationError|null A ValidationError if validation fails, otherwise null.
      */
     public function validate($value, Validator $validator);
 }

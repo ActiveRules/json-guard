@@ -1,9 +1,9 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Constraint\DraftFour\Required;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\Required;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
 
 class RequiredTest extends TestCase

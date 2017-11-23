@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard\Test;
+namespace Activerules\JsonGuard\Test;
 
 use PHPUnit\Framework\TestCase;
 
@@ -28,9 +28,9 @@ class FunctionsTest extends TestCase
     function test_is_json_integer($jsonInteger, $isValid)
     {
         if ($isValid) {
-            $this->assertTrue(\League\JsonGuard\is_json_integer($jsonInteger));
+            $this->assertTrue(\Activerules\JsonGuard\is_json_integer($jsonInteger));
         } else {
-            $this->assertFalse(\League\JsonGuard\is_json_integer($jsonInteger));
+            $this->assertFalse(\Activerules\JsonGuard\is_json_integer($jsonInteger));
         }
     }
 
@@ -49,6 +49,6 @@ class FunctionsTest extends TestCase
      */
     function test_as_string($value, $expected)
     {
-        $this->assertSame($expected, \League\JsonGuard\as_string($value));
+        $this->assertSame($expected, \Activerules\JsonGuard\as_string($value));
     }
 }

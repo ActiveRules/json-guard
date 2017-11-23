@@ -1,12 +1,12 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard\Assert;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\ValidationError;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\ValidationError;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
 
 final class Type implements ConstraintInterface
 {
@@ -35,13 +35,13 @@ final class Type implements ConstraintInterface
             case 'number':
                 return $this->validateType(
                     $value,
-                    'League\JsonGuard\is_json_number',
+                    'Activerules\JsonGuard\is_json_number',
                     $validator
                 );
             case 'integer':
                 return $this->validateType(
                     $value,
-                    'League\JsonGuard\is_json_integer',
+                    'Activerules\JsonGuard\is_json_integer',
                     $validator
                 );
             case 'string':
@@ -52,9 +52,9 @@ final class Type implements ConstraintInterface
     /**
      * @param mixed                       $value
      * @param callable                    $callable
-     * @param \League\JsonGuard\Validator $validator
+     * @param \Activerules\JsonGuard\Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null
+     * @return \Activerules\JsonGuard\ValidationError|null
      *
      */
     private function validateType($value, callable $callable, Validator $validator)

@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard;
+namespace Activerules\JsonGuard;
 
 final class ValidationError implements \JsonSerializable
 {
@@ -160,7 +160,7 @@ final class ValidationError implements \JsonSerializable
     /**
      * @param $cause
      *
-     * @return \League\JsonGuard\ValidationError
+     * @return \Activerules\JsonGuard\ValidationError
      */
     public function withCause($cause)
     {
@@ -179,7 +179,7 @@ final class ValidationError implements \JsonSerializable
     {
         if ($this->context === null) {
             $this->context = array_map(
-                'League\JsonGuard\as_string',
+                'Activerules\JsonGuard\as_string',
                 [
                     self::KEYWORD     => $this->keyword,
                     self::PARAMETER   => $this->parameter,

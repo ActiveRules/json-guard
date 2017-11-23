@@ -12,8 +12,8 @@ To make sure your schema is valid, you can check it against the [meta-schema](ht
 
 ```php
 <?php
-use League\JsonReference\Dereferencer;
-use League\JsonGuard\Validator;
+use Activerules\JsonReference\Dereferencer;
+use Activerules\JsonGuard\Validator;
 
 $metaSchema = Dereferencer::draft4()->dereference('http://json-schema.org/draft-04/schema#');
 $validator  = new Validator($mySchema, $metaSchema);
@@ -50,9 +50,9 @@ If you need to compare floats with more than 10 places after the decimal place, 
 ```php
 <?php
 
-$ruleSet = new \League\JsonGuard\RuleSet\DraftFour();
+$ruleSet = new \Activerules\JsonGuard\RuleSet\DraftFour();
 $ruleSet->set('minimum', function () {
-    return new \League\JsonGuard\Constraint\DraftFour\Minimum(20);
+    return new \Activerules\JsonGuard\Constraint\DraftFour\Minimum(20);
 });
-$validator = new \League\JsonGuard\Validator($data, $schema, $ruleSet);
+$validator = new \Activerules\JsonGuard\Validator($data, $schema, $ruleSet);
 ```

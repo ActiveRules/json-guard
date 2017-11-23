@@ -1,20 +1,20 @@
 <?php
 
-namespace League\JsonGuard\Test;
+namespace Activerules\JsonGuard\Test;
 
-use League\JsonGuard;
-use League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Exception\InvalidSchemaException;
-use League\JsonGuard\Exception\MaximumDepthExceededException;
-use League\JsonGuard\RuleSet\DraftFour;
-use League\JsonGuard\Validator;
-use League\JsonReference\Dereferencer;
-use League\JsonReference\Loader\ArrayLoader;
-use League\JsonReference\Loader\ChainedLoader;
-use League\JsonReference\Loader\CurlWebLoader;
+use Activerules\JsonGuard;
+use Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Exception\MaximumDepthExceededException;
+use Activerules\JsonGuard\RuleSet\DraftFour;
+use Activerules\JsonGuard\Validator;
+use Activerules\JsonReference\Dereferencer;
+use Activerules\JsonReference\Loader\ArrayLoader;
+use Activerules\JsonReference\Loader\ChainedLoader;
+use Activerules\JsonReference\Loader\CurlWebLoader;
 use PHPUnit\Framework\TestCase;
-use function League\JsonGuard\error;
+use function Activerules\JsonGuard\error;
 
 class ValidatorTest extends TestCase
 {
@@ -103,7 +103,7 @@ class ValidatorTest extends TestCase
      * schema from memory, but defer any other http(s) calls to the Curl loader.  This allows
      * us to run tests without requiring the json-schema.org website to be available.
      *
-     * @return \League\JsonReference\Dereferencer
+     * @return \Activerules\JsonReference\Dereferencer
      */
     private static function createDereferencer()
     {

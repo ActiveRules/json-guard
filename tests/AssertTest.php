@@ -1,9 +1,9 @@
 <?php
 
-namespace League\JsonGuard\Test;
+namespace Activerules\JsonGuard\Test;
 
-use League\JsonGuard\Assert;
-use League\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
 use PHPUnit\Framework\TestCase;
 
 class AssertTest extends TestCase

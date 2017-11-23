@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard\Exception;
+namespace Activerules\JsonGuard\Exception;
 
 final class InvalidSchemaException extends \RuntimeException
 {
@@ -33,7 +33,7 @@ final class InvalidSchemaException extends \RuntimeException
      * @param string $keyword
      * @param string $pointer
      *
-     * @return \League\JsonGuard\Exception\InvalidSchemaException
+     * @return \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public static function invalidParameterType($actualType, array $allowedTypes, $keyword, $pointer)
     {
@@ -52,7 +52,7 @@ final class InvalidSchemaException extends \RuntimeException
      * @param string $keyword
      * @param string $pointer
      *
-     * @return \League\JsonGuard\Exception\InvalidSchemaException
+     * @return \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public static function invalidParameter($actualParameter, array $allowedParameter, $keyword, $pointer)
     {
@@ -70,7 +70,7 @@ final class InvalidSchemaException extends \RuntimeException
      * @param string  $keyword
      * @param string  $pointer
      *
-     * @return \League\JsonGuard\Exception\InvalidSchemaException
+     * @return \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public static function negativeValue($value, $keyword, $pointer)
     {
@@ -86,7 +86,7 @@ final class InvalidSchemaException extends \RuntimeException
      * @param string $keyword
      * @param string $pointer
      *
-     * @return \League\JsonGuard\Exception\InvalidSchemaException
+     * @return \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public static function emptyArray($keyword, $pointer)
     {
@@ -102,7 +102,7 @@ final class InvalidSchemaException extends \RuntimeException
      * @param string $keyword
      * @param string $pointer
      *
-     * @return \League\JsonGuard\Exception\InvalidSchemaException
+     * @return \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public static function missingProperty($property, $keyword, $pointer)
     {

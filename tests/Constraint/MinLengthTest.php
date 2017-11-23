@@ -1,10 +1,10 @@
 <?php
 
-namespace League\JsonGuard\Test\Constraint;
+namespace Activerules\JsonGuard\Test\Constraint;
 
-use League\JsonGuard\Constraint\DraftFour\MinLength;
-use League\JsonGuard\ValidationError;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\MinLength;
+use Activerules\JsonGuard\ValidationError;
+use Activerules\JsonGuard\Validator;
 use PHPUnit\Framework\TestCase;
 
 class MinLengthTest extends TestCase

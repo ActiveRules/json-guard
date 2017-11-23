@@ -33,15 +33,15 @@ The following example shows a simple extension to validate twitter handles.  The
 ```php
 <?php
 
-use League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
-use League\JsonGuard\Validator;
+use Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
+use Activerules\JsonGuard\Validator;
 
 class TwitterHandleFormatExtension implements FormatExtensionInterface
 {
     public function validate($value, Validator $validator)
     {
         if (stripos($value, '@') !== 0) {
-            return \League\JsonGuard\error('A twitter handle must start with "@"', $validator);
+            return \Activerules\JsonGuard\error('A twitter handle must start with "@"', $validator);
         }
     }
 }

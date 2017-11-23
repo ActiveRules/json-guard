@@ -1,8 +1,8 @@
 <?php
 
-namespace League\JsonGuard;
+namespace Activerules\JsonGuard;
 
-use League\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
 
 /**
  * Assertions to verify a schema is valid.

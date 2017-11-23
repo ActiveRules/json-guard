@@ -1,6 +1,6 @@
 <?php
 
-namespace League\JsonGuard;
+namespace Activerules\JsonGuard;
 
 interface ConstraintInterface
 {
@@ -9,9 +9,9 @@ interface ConstraintInterface
      * @param mixed $parameter
      * @param Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null
+     * @return \Activerules\JsonGuard\ValidationError|null
      *
-     * @throws \League\JsonGuard\Exception\InvalidSchemaException
+     * @throws \Activerules\JsonGuard\Exception\InvalidSchemaException
      */
     public function validate($value, $parameter, Validator $validator);
 }

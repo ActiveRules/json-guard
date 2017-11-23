@@ -1,13 +1,13 @@
 <?php
 
-namespace League\JsonGuard\Constraint\DraftFour;
+namespace Activerules\JsonGuard\Constraint\DraftFour;
 
-use League\JsonGuard\Assert;
-use League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
-use League\JsonGuard\ConstraintInterface;
-use League\JsonGuard\Validator;
-use function League\JsonGuard\error;
-use League\JsonGuard\Exception\InvalidSchemaException;
+use Activerules\JsonGuard\Assert;
+use Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface;
+use Activerules\JsonGuard\ConstraintInterface;
+use Activerules\JsonGuard\Validator;
+use function Activerules\JsonGuard\error;
+use Activerules\JsonGuard\Exception\InvalidSchemaException;
 
 final class Format implements ConstraintInterface
 {
@@ -34,7 +34,7 @@ final class Format implements ConstraintInterface
     const KNOWN_FORMATS = ['date-time', 'uri', 'email', 'ipv4', 'ipv6','hostname'];
 
     /**
-     * @var \League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface[]
+     * @var \Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface[]
      */
     private $extensions = [];
 
@@ -46,7 +46,7 @@ final class Format implements ConstraintInterface
     /**
      * Any custom format extensions to use, indexed by the format name.
      *
-     * @param array \League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface[] $extensions
+     * @param array \Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface[] $extensions
      * @param bool                                                                           $ignoreUnknownFormats
      */
     public function __construct(array $extensions = [], $ignoreUnknownFormats = true)
@@ -62,7 +62,7 @@ final class Format implements ConstraintInterface
      * Add a custom format extension.
      *
      * @param string                                                                 $format
-     * @param \League\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface $extension
+     * @param \Activerules\JsonGuard\Constraint\DraftFour\Format\FormatExtensionInterface $extension
      */
     public function addExtension($format, FormatExtensionInterface $extension)
     {
@@ -146,9 +146,9 @@ final class Format implements ConstraintInterface
     /**
      * @param mixed                       $value
      * @param string                      $pattern
-     * @param \League\JsonGuard\Validator $validator
+     * @param \Activerules\JsonGuard\Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null
+     * @return \Activerules\JsonGuard\ValidationError|null
      */
     private static function validateRegex($value, $pattern, Validator $validator)
     {
@@ -163,9 +163,9 @@ final class Format implements ConstraintInterface
      * @param mixed                       $value
      * @param int                         $filter
      * @param mixed                       $options
-     * @param \League\JsonGuard\Validator $validator
+     * @param \Activerules\JsonGuard\Validator $validator
      *
-     * @return \League\JsonGuard\ValidationError|null
+     * @return \Activerules\JsonGuard\ValidationError|null
      */
     private static function validateFilter($value, $filter, $options, Validator $validator)
     {
